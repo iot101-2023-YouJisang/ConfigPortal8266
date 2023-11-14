@@ -32,16 +32,18 @@ extern              String user_config_html;
 extern char         *ssid_pfix;
 
 String html_begin = ""
-    "<html><head><meta charset='UTF-8'><title>IOT Device Setup</title></head>"
-    "<body><center><h1>Device Setup Page</h1>"
-        "<style>"
-            "input {font-size:3em; width:90%; text-align:center;}"
-            "button { border:0;border-radius:0.3rem;background-color:#1fa3ec;"
-            "color:#fff; line-height:2em;font-size:3em;width:90%;}"
-        "</style>"
-        "<form action='/save'>"
-            "<p><input type='text' name='ssid' placeholder='SSID'>"
-            "<p><input type='text' name='w_pw'placeholder='Password'>";
+                  "<html><head><meta charset='UTF-8'><title>IOT Device Setup</title></head>"
+                  "<body><center><h1>Device Setup Page</h1>"
+                  "<style>"
+                  "input {font-size:3em; width:90%; text-align:center;}"
+                  "button { border:0;border-radius:0.3rem;background-color:#1fa3ec;"
+                  "color:#fff; line-height:2em;font-size:3em;width:90%;}"
+                  "</style>"
+                  "<form action='/save'>"
+                  "<p><input type='text' name='ssid' placeholder='SSID'>"
+                  "<p><input type='text' name='w_pw' placeholder='Password'>"
+                  "<p><input type='text' name='web_relay_address' placeholder='Web Relay Address'>";
+
 
 String html_end = ""
             "<p><button type='submit'>Save</button>"
