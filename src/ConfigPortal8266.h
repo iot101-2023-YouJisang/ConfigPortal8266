@@ -22,6 +22,8 @@
 #define             JSON_BUFFER_LENGTH 3072
 #define             JSON_CHAR_LENGTH 1024
 StaticJsonDocument<JSON_BUFFER_LENGTH> cfg;
+extern char* web_relay_address;
+
 
 ESP8266WebServer    webServer(80);
 const int           RESET_PIN = 0;
